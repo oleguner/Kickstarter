@@ -2,9 +2,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 
   height: 590px;
-  width: 99%;
+  width: 100%;
 
   background-color: rgba(47, 13, 13, 0.46);
   background-image: url("../images/Speaker2.jpg");

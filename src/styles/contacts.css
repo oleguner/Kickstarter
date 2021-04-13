@@ -67,7 +67,8 @@
 .contacts__button:hover {
   background: #0c797a;
   transition-duration: 1s;
-  border-radius: 10px;
+  border-radius: 6px;
+  color: #f7f7f7;
 }
 
 @media screen and (max-width: 1024px) {

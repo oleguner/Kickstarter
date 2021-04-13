@@ -15,15 +15,50 @@
 }
 
 .footer__icon {
-  margin: 0 18px 36px;
+  display: inline-block;
+  padding: 0 25px;
+}
+
+.footer__icon--facebook,
+.footer__icon--instagram,
+.footer__icon--twitter {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: background-image 0.5s;
+}
+
+.footer__icon--facebook {
+  width: 11px;
+  height: 19px;
+
+  background-image: url("../images/media/facebook.svg");
+}
+
+.footer__icon--facebook:hover {
+  background-image: url("../images/media/facebook-colored.svg");
 }
 
 .footer__icon--twitter {
-  margin-right: 38px;
+  width: 22px;
+  height: 17px;
+
+  background-image: url("../images/media/twitter.svg");
+}
+
+.footer__icon--twitter:hover {
+  background-image: url("/images/media/twitter-colored.svg");
 }
 
 .footer__icon--instagram {
-  margin-right: 45px;
+  width: 18px;
+  height: 18px;
+
+  background-image: url("../images/media/instagram.svg");
+}
+
+.footer__icon--instagram:hover {
+  background-image: url("/images/media/instagram-colored.svg");
 }
 
 .footer__rights {

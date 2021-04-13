@@ -19,7 +19,6 @@
   display: flex;
   flex-direction: column;
   justify-content: start;
-  align-items: self-end;
 }
 
 .features__sound::after {
@@ -29,10 +28,17 @@
   right: -75px;
   width: 1113px;
   height: 701px;
-  background-image: url(../images/Sound.png);
-  background-repeat: no-repeat;
-  background-position: 200px 150px;
   background-color: #f2f2f2;
+  background-position: 200px 150px;
+  z-index: -12;
+
+}
+
+.features__img {
+  position: absolute;
+  bottom: -10px;
+  right: 55px;
+  background-position: 200px 150px;
   z-index: -12;
 }
 
@@ -64,12 +70,39 @@
   color: #333;
 }
 
+.features__button {
+  display: none;
+  height: 13px;
+  width: 48px;
+  cursor: pointer;
+}
+
+.features__button--left {
+  background-image: url(../images/button_left.svg);
+}
+
+.features__button--left:hover {
+  background-image: url(../images/button_left_black.svg);
+}
+
+.features__button--right {
+  background-image: url(../images/button_right.svg);
+}
+
+.features__button--right:hover {
+  background-image: url(../images/button_right_black.svg);
+}
+
 @media screen and (max-width: 1024px) {
   .features {
     width: 100vw;
   }
   .features__sound::after {
     width: 100vw;
+  }
+  .features__img {
+    bottom: 100px;
+    right: -20px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -96,27 +129,52 @@
     margin: 160px 0 0 175px;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .features {
-    align-items: center;
+    display: block;
+    padding-left: 50px;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
   }
   .features__sound--margin,
   .features__connectivity--margin,
   .features__app--margin {
     margin-left: 0;
+    height: 365px;
   }
   .features__heading {
-    align-self: flex-start;
     font-size: 46px;
     margin: 0 0 50px;
   }
+  .features__app,
+  .features__connectivity {
+    display: none;
+    margin: 0;
+  }
+  .features__img {
+    position: relative;
+    width: 90%;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+  }
   .features__topic {
     font-size: 30px;
+    align-self: flex-start;
   }
   .features__list-element {
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: bold;
   }
   .features__sound::after {
     background-position: 115px 210px;
+  }
+  .features__buttons {
+    margin: -10% 0 6% 30%;
+  }
+  .features__button--left,
+  .features__button--right {
+    display: inline-block;
   }
 }

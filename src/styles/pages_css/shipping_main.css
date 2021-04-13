@@ -1,0 +1,8 @@
+@import "../utils/reset.css";
+@import "../page.css";
+@import "../logo.css";
+@import "./shipping_css_blocks/header.css";
+@import "./shipping_css_blocks/progress.css";
+@import "./shipping_css_blocks/summary.css";
+@import "./shipping_css_blocks/shipping.css";
+@import "./shipping_css_blocks/footer.css";

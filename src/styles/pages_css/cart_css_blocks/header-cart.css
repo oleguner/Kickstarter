@@ -1,0 +1,27 @@
+.header-cart__logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 25px;
+  padding-left: 123px;
+}
+
+.header-cart__logo {
+  margin-bottom: 55px;
+}
+
+.header-cart__back:hover {
+  stroke: #000;
+  fill: #000;
+}
+
+@media screen and (max-width: 1024px) {
+  .header-cart__logo-container {
+    padding-left: 32px;
+  }
+}
+@media only screen and (max-device-width: 768px) {
+  .header-cart__logo-container {
+    padding-left: 32px;
+  }
+}

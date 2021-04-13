@@ -1,0 +1,77 @@
+.shipping {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shipping__wrapper {
+  margin-top: 120px;
+}
+
+.shipping__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.shipping__input {
+  width: 378px;
+  height: 35px;
+  margin-top: 30px;
+  background-color: #f7f7f7;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #bdbdbd;
+}
+
+.shipping__input::placeholder {
+  color: #7c7c7c;
+  font-style: 12px;
+}
+
+.shipping__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.shipping__return {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 172px;
+  height: 46px;
+
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #fff;
+  border: 1px solid #333;
+  color: #333;
+  font-size: 12px;
+  line-height: 18px;
+  cursor: pointer;
+  font-weight: 600;
+  transition-duration: 0.5s;
+}
+
+.shipping__return:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+  .shipping__wrapper,
+  .shipping__form {
+    width: 90vw;
+  }
+  .shipping__input {
+    width: 90vw;
+  }
+  .shipping__nav {
+    flex-direction: column-reverse;
+  }
+  .shipping__return {
+    margin-top: 40px;
+  }
+}

@@ -1,0 +1,9 @@
+@import "../utils/reset.css";
+@import "../page.css";
+@import "../logo.css";
+@import "./cart_css_blocks/header-cart.css";
+@import "./cart_css_blocks/progress.css";
+@import "./cart_css_blocks/propduct.css";
+@import "./cart_css_blocks/summary.css";
+@import "./cart_css_blocks/delivery.css";
+@import "./cart_css_blocks/footer.css";

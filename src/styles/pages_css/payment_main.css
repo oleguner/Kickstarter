@@ -1,0 +1,9 @@
+@import "../utils/reset.css";
+@import "../page.css";
+@import "../logo.css";
+@import "./shipping_css_blocks/header.css";
+@import "./payment_css_blocks/progress.css";
+@import "./payment_css_blocks/summary.css";
+@import "./payment_css_blocks/shipping.css";
+@import "./payment_css_blocks/payment.css";
+@import "./payment_css_blocks/footer.css";
